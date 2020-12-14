@@ -8,8 +8,9 @@
 .navbar {
   width: 100%;
   background-color: #555;
-  overflow: auto;
-  height: 40px;
+  overflow: hidden;
+  height: 45px;
+
 }
 
 /* Navbar links */
@@ -36,7 +37,6 @@
 /* Log in */
 .login {
   float: right;
-  margin-top: 12px;
 }
 
 /* Navbar links on mouse-over */
@@ -212,9 +212,9 @@ a:hover {
 .animated {
   background-image: url(images/LightTower.jpg);
   background-repeat: no-repeat;
-  background-position: left top;
+  /* background-position: left top;
   padding-top: 95px;
-  margin-bottom: 60px;
+  margin-bottom: 60px; */
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -239,7 +239,7 @@ a:hover {
 
 @keyframes blinking {
   0% {
-    opacity: .7;
+    opacity: .6;
   }
   
   100% {
@@ -247,7 +247,6 @@ a:hover {
   }
 }
 #demo {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   z-index: 100;

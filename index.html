@@ -8,16 +8,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Light Tower Guild</title>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="/favicon."> 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="script.js" async defer></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Google Button script -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <!-- Google Script end -->
   </head>
   <body>
   
@@ -30,21 +34,29 @@
 
     <!-- Navbar -->
     <div class="navbar">
-      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Project</a>
-      <a href="currentprojects.html"><i class="fa fa-eye" style='color:brown'></i> Current Projects</a>
-      <a href="incompleteprojects.html"><i class="fas fa-fire" style='color:red'></i> InComplete Projects </a>
-      <a href="profilepage.html"><i class="fas fa-users" aria-hidden="true" style="color:black"></i> Profile Page </a>
+      <a class="active" href="index.html"><img id="demo" src="images/favicon.ico" alt="favicon"></a>
+      <a href="pages/currentprojects.html"><i class="fa fa-eye" style='color:brown'></i> Current Projects</a>
+      <a href="pages/incompleteprojects.html"><i class="fas fa-fire" style='color:red'></i> InComplete Projects </a>
+      <a href="pages/profilepage.html"><i class="fas fa-user" aria-hidden="true" style="color:black"></i> Profile Page </a>
       <a href="https://trello.com/b/bONjx6Zl/light-tower-guild" target="_blank"><i class="fas fa-chalkboard-teacher" style='color:blue'></i> Trello Board </a>
-      <a href="#"><i class="fa fa-fw fa-search" style='color:silver'></i>People</a>
+      <a href=""><i class="fas fa-users" style='color:silver'></i> Teams </a>
+      <a href="pages/profilepage.html"><i class="fas fa-user-ninja" style="color:yellow"></i> LTG Team </a>
       
+      <!-- Log in -->
       <div class="login">
-        <span class="close">&times;</span>
+        <input type="button" value="Login" onclick="location.href = 'pages/loginpage.html';">
         <input type="text" placeholder="Username" name="username" />
           <input type="text" placeholder="Password" name="psw" />
       </div>
-
+      <!-- Log in end -->
     </div>
-
+    <!-- End of navbar -->
+   
+    <!-- Google sign in button -->
+      <div id="my-signin2"></div>
+      <!-- Google button end -->
+    <!-- Title in background picture -->
+    
     <h1 class="title">Light Tower Guild</h1>
     <div id="demo"><img src="images/favicon.ico" alt="favicon"></div> </br>
     <h2 class="title">Completed Project</h2>
@@ -255,17 +267,16 @@
         </div>
       </div>
     </div>
-    
+    <!-- end of cards -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <footer id="footer">
     
-    <!-- Blinking lighhouse-->
       <!-- Social Media Icons-->
-      <a href="#" class="fa fa-facebook fasocial"></a>
-      <a href="#" class="fa fa-twitter fasocial"></a>
-      <a href="#" class="fa fa-google fasocial"></a>
-      <a href="#" class="fa fa-linkedin fasocial"></a>
-      <a href="#" class="fa fa-youtube fasocial"></a>
-      <a href="#" class="fa fa-instagram fasocial"></a>
+      <a href="https://www.facebook.com/Light-Tower-Guild-106053098048772/" target="_blank" class="fa fa-facebook fasocial"></a>
+      <a href="#" class="fa fa-twitter fasocial" target="_blank"></a>
+      <a href="https://www.linkedin.com/company/light-tower-guild" target="_blank" class="fa fa-linkedin fasocial"></a>
+      <a href="#" class="fa fa-youtube fasocial" target="_blank"></a>
+      <a href="#" class="fa fa-instagram fasocial" target="_blank"></a>
 
     </footer>
   </body>
